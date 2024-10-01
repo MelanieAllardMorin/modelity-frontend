@@ -1,19 +1,25 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import L from 'leaflet';
+import { ItineraryService } from '../../services/itinerary.service';
 
 @Component({
-  selector: 'app-itinerary',
+  selector: 'app-map',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './itinerary.component.html',
-  styleUrl: './itinerary.component.scss'
+  providers: [
+    ItineraryService
+  ],
+  templateUrl: './map.component.html',
+  styleUrl: './map.component.scss'
 })
-export class ItineraryComponent {
+export class MapComponent {
 
   private map: L.Map | undefined;
 
-  constructor() { }
+  from: FormControl = new FormControl();
+  to: FormControl = new FormControl();
+
+  constructor(private itineraryService: ItineraryService) { }
 
   ngOnInit(): void {
     this.initMap();
@@ -24,10 +30,9 @@ export class ItineraryComponent {
   }
 
   private initMap(): void {
-    // Initialize the map and set its view to a specific geographical coordinate and zoom level
     this.map = L.map('map', {
-      center: [51.505, -0.09], // Center at London
-      zoom: 13
+      center: [46, 3],
+      zoom: 6
     });
 
     // Set up tile layer from OpenStreetMap

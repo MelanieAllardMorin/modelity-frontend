@@ -1,0 +1,11 @@
+<div class="column w-100">
+     <p style="margin-bottom: 20px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+     </p>
+     <mat-form-field class="w-100" appearance="outline">
+          <input type="text" matInput [formControl]="from" placeholder="Departure city"/>
+     </mat-form-field>
+     <mat-form-field class="w-100" appearance="outline">
+          <input type="text" matInput [formControl]="to"  placeholder="Destination city" [disabled]="!from.value" />
+     </mat-form-field>
+</div>
