@@ -94,6 +94,10 @@ main {
 .row {
   display: flex;
   flex-direction: row;
+
+  &.end{
+    justify-content: end;
+  }
 }
 
 .column {
