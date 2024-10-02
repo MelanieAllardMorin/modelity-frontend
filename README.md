@@ -1,26 +1,26 @@
-# ModelityFrontend
+# Welcome to Modelity
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
 
-## Development server
+## Run app
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `yarn start` to launch app. Navigate to `http://localhost:4200/`.
 
-## Code scaffolding
+## Calculate your itinerary
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Try calculating an itinerary between two cities. The result must be displayed on the map like this:
+![image](https://github.com/user-attachments/assets/5ad7c92b-d9a8-45c6-996e-b76ae6ced384)
 
-## Build
+## Run in failure mode
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Stop the app, chnage `failureMode` in the file environments/environment.ts. Restart the app. Itinerary computing must now fail with an error displayed (endpoint does not really exist):
+![image](https://github.com/user-attachments/assets/1b808359-b608-44c8-b10b-b79b83c18345)
 
-## Running unit tests
+## Run unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `yarn test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![image](https://github.com/user-attachments/assets/d76fffb1-8a24-4086-b7bc-a60271b2ec74)
 
 ## Further help
 
