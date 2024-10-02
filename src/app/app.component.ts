@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
-import { ItineraryComponent } from './itinerary/itinerary.component';
+import { ItineraryComponent } from './components/itinerary/itinerary.component';
+import { MapComponent } from './components/map/map.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ItineraryComponent],
+  imports: [
+    ItineraryComponent,
+    MapComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

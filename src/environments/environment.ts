@@ -1,4 +1,5 @@
 export const environment = {
   production: false,
-  api: `https://modelity.fr`
+  itineraryApi: "https://modelity.fr",
+  cityApi: "https://nominatim.openstreetmap.org"
 };
