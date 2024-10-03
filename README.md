@@ -13,7 +13,7 @@ Try calculating an itinerary between two cities. The result must be displayed on
 
 ## Run in failure mode
 
-Stop the app, chnage `failureMode` in the file environments/environment.ts. Restart the app. Itinerary computing must now fail with an error displayed (endpoint does not really exist):
+Stop the app, change `failureMode` to `true` in the file environments/environment.ts. Restart the app. Itinerary computing must now fail with an error displayed (endpoint does not really exist):
 ![image](https://github.com/user-attachments/assets/1b808359-b608-44c8-b10b-b79b83c18345)
 
 ## Run unit tests
